@@ -46,7 +46,7 @@ void insert(int num, int loc)
 		parentnode = (loc - 1) / 2;
 		if(num <= array[parentnode])
 		{
-			array[parentnode] = num;
+			array[loc] = num;
 			return;
 		}
 		array[loc] = array[parentnode];
