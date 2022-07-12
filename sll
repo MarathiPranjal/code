@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct node{
+int data;
+struct node * next;
+};
+
+int main(){
+
+struct node *one=NULL;
+struct node *two=NULL;
+struct node *three=NULL;
+struct node *head;
+
+one=malloc(sizeof(struct node));
+two=malloc(sizeof(struct node));
+three=malloc(sizeof(struct node));
+
+one->data=23;
+two->data=43;
+three->data=34;
+
+one->next=two;
+two->next=three;
+head->next=one;
+three->next=NULL;
+
+return 0;
+}
